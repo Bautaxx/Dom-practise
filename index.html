@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+</body>
+<script>
+    const p = document.createElement('p');
+    p.textContent = 'Hey I am red';
+    p.style.color = 'red';
+    const container = document.querySelector('#container');
+    container.appendChild(p); //This adds a node as a child of container which is the parent class
+    //H3 task
+    const subTitle = document.createElement('h3');
+    subTitle.textContent = 'Hey I am Blue';
+    subTitle.style.color = 'blue';
+    container.appendChild(subTitle);
+
+    //External div creation
+    const box = document.createElement('div');
+    box.style.borderColor = 'black'; //ctrl + k +
+    box.style.backgroundColor = 'pink';
+    container.appendChild(box);
+</script>
+</html>
